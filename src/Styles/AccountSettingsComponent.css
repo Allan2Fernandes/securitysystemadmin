@@ -1,0 +1,54 @@
+#MainAccountSettingsComponentDiv{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc((50% + 25px) - 200px);
+    background: linear-gradient(to top, #a3309e, #9147ac, #7d57b6, #6a64bb, #596fbc);
+    border-radius: 10px;
+}
+
+#CredentialsDiv{
+    position: relative;
+    top: 50px;
+}
+
+#CredentialsDiv center div{
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+#CredentialsDiv center div input{
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    color: white;
+}
+#CredentialsDiv center div input:focus{
+    outline: none;
+}
+
+#CredentialsDiv center div input::placeholder{
+    color: azure;
+}
+
+#faUser{
+    color: white;
+}
+
+#UpdateAccountButtonDiv{
+    position: relative;
+    top: 100px;
+}
+
+#UpdateAccountButton{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+}

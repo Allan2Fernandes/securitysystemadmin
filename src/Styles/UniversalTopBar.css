@@ -1,0 +1,91 @@
+#WholeTopBarDiv{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    background-color: #596fbc;
+    display: flex;
+    align-items: center;
+}
+
+#LogoDiv{
+    position: relative;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e2d1c3;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#HomeIcon{
+    font-size: 25px;
+}
+
+#SettingsDiv{
+    position: relative;
+    left: calc(100% - 80px - 40px - 15px - 15px);
+    width: 40px;
+    height: 40px;
+    background-color: #e2d1c3;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#CogIcon{
+    font-size: 30px;
+}
+
+#AccountsDiv{
+    position: relative;
+    left: calc(100% - 80px - 40px - 15px);
+    width: 40px;
+    height: 40px;
+    background-color: #e2d1c3;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#UserIcon{
+    font-size: 25px;
+}
+
+#DropDownMenu{
+    position: absolute;
+    top: 55px;
+    left: calc(100% - 150px - 5px);
+    width: 150px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#AccountSettingsDiv{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+#AccountSettingsDiv:hover{
+    cursor: pointer;
+    background-color: #596fbc;
+    border-radius: 5px;
+}
+
+#SignOutDiv{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+#SignOutDiv:hover{
+    cursor: pointer;
+    background-color: #596fbc;
+    border-radius: 5px;
+}

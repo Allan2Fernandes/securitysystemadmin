@@ -1,0 +1,87 @@
+#MainComponentDiv{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: calc(50% + 25px - 200px);
+    left: calc(50% - 150px);
+    border-radius: 10px;
+    background: linear-gradient(to top, #a3309e, #9147ac, #7d57b6, #6a64bb, #596fbc);
+}
+
+#ListOfPermissionsDiv{
+    position: relative;
+    height: 280px;
+    width: 90%;
+    left: 5%;
+    overflow: auto;
+}
+
+#ListOfPermissionsDiv::-webkit-scrollbar{
+    width: 10px;
+}
+
+#ListOfPermissionsDiv::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+#ListOfPermissionsDiv::-webkit-scrollbar-thumb{
+    background: #808084;
+    border-radius: 10px;
+}
+
+#ListOfPermissionsDiv::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+#GrantPermissionButton label{
+    margin-left: 5px;
+}
+
+#GrantPermissionButton{
+    margin-left: 5%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#PermissionsTable{
+    position: relative;
+    width: 100%;
+    top: 10px;
+    border-collapse: collapse;
+}
+
+
+
+#PermissionsTable thead tr{
+    border: 1px solid black;
+}
+
+#PermissionsTable thead tr th{
+    width: 50%;
+    color: white;
+    background-color: black;
+}
+
+#PermissionsTable tbody tr{
+    border-bottom: 1px solid black;
+
+}
+
+#PermissionsTable tbody tr td{
+    width: 50%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.OddRow{
+    background-color: #555555;
+}
+
+.EvenRow{
+    background-color: #808084;
+}

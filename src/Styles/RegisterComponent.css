@@ -1,0 +1,90 @@
+#RegisterComponentMainDiv{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    top: calc(50% - 200px);
+    left: calc(50% - 150px);
+    background: linear-gradient(to top, #a3309e, #9147ac, #7d57b6, #6a64bb, #596fbc);
+    border-radius: 10px;
+}
+
+#CenterForIconDiv{
+    position: relative;
+    top: 25px;
+}
+
+#faUserPlusIcon{
+    position: relative;
+    font-size: 25px;
+    color: black;
+}
+
+#CircularDivUserPlusIcon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CredentialsDiv{
+    position: relative;
+    top: 50px;
+}
+
+#CredentialsDiv center div{
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+#CredentialsDiv center div input{
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    color: white;
+}
+#CredentialsDiv center div input:focus{
+    outline: none;
+}
+
+#CredentialsDiv center div input::placeholder{
+    color: azure;
+}
+
+#faUser{
+    color: white;
+}
+
+#CreateAccountButtonDiv{
+    position: relative;
+    top: 100px;
+}
+
+#CreateAccountButton{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+}
+
+#InvalidCredsLabel{
+    position: relative;
+    color: yellow;
+    overflow: scroll;
+    font-size: 12px;
+}
+
+#InvalidCredsDivRegisterComponent{
+    left: 15%;
+    position: relative;
+    width: 70%;
+    top: 10px;
+}

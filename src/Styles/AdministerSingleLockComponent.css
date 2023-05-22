@@ -1,0 +1,132 @@
+#AdminSingleLockComponentMainDiv{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc((50% + 25px) - 200px);
+    background: linear-gradient(to top, #a3309e, #9147ac, #7d57b6, #6a64bb, #596fbc);
+    border-radius: 10px;
+}
+
+#LockNameDiv{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: 40px;
+}
+
+#LockNameDiv label{
+    color: white;
+    font-size: 10px;
+}
+
+#LockNameDiv input{
+    position: relative;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#LockNameDiv input:focus{
+    outline: none;
+}
+
+#LockIDDiv{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: calc(40px + 15px)
+}
+
+#LockIDDiv label{
+    color: white;
+    font-size: 10px;
+}
+
+#LockIDDiv input{
+    position: relative;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#LockIDDiv input:focus{
+    outline: none;
+}
+
+
+#LockLocationDiv{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: calc(40px + 15px + 15px);
+}
+
+#LockLocationDiv label{
+    color: white;
+    font-size: 10px;
+}
+
+#LockLocationDiv input{
+    position: relative;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#LockLocationDiv input:focus{
+    outline: none;
+}
+
+#LockIsSharedDiv{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: calc(40px + 15px + 15px + 15px);
+}
+
+#LockIsSharedDiv label{
+    color: white;
+    font-size: 10px;
+}
+
+#LockIsSharedDiv p{
+    position: relative;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#ButtonsDiv{
+    position: relative;
+    top: calc(40px + 15px + 15px + 15px + 15px);
+}
+
+#UpdateDetailsButton{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+}
+
+#ManagePermissionsButton{
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+}
