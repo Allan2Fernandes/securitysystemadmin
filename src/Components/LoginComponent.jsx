@@ -56,14 +56,9 @@ function LoginComponent(){
                     if (prevValidDetailsReturned) {
                         //data is token
                         localStorage.setItem('sessionToken', data);
-                        localStorage.setItem('userName', userName)
-                        localStorage.setItem('password', password)
-                        navigate("/AdministerLock", {
-                            state: {
-                                userName: userName,
-                                password: password
-                            }
-                        });
+                        localStorage.setItem('userName', userName);
+                        localStorage.setItem('password', password);
+                        navigate("/AdministerLock");
                     }
                     return prevValidDetailsReturned;
                 });
@@ -80,7 +75,7 @@ function LoginComponent(){
                 </div>
             </center>
 
-            <div id={"CredentialsDiv"}>
+            <div id={"CredentialsDivLogIn"}>
                 <center id={"CenterForCredentialsDiv"}>
                     <div>
                         <FontAwesomeIcon icon={faUser} id={"faUser"}/>

@@ -9,12 +9,7 @@ function UniversalTopBar(props){
     const navigate = useNavigate();
 
     function handleClickHomeIcon(){
-        navigate("/AdministerLock", {
-            state:{
-                userName: localStorage.getItem('userName'),
-                password: localStorage.getItem('password')
-            }
-        })
+        navigate("/AdministerLock")
     }
 
     function handleClickCogIcon(){
@@ -26,12 +21,7 @@ function UniversalTopBar(props){
     }
 
     function AccountSettingsClickHandler(){
-        navigate("/AccountSettings", {
-            state: {
-                userName: props.userName,
-                password: props.password
-            }
-        })
+        navigate("/AccountSettings")
     }
 
     async function signOutClickHandler(event){

@@ -10,7 +10,7 @@
 
 #CredentialsDiv{
     position: relative;
-    top: 50px;
+    top: 10px;
 }
 
 #CredentialsDiv center div{
@@ -40,7 +40,7 @@
 
 #UpdateAccountButtonDiv{
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 #UpdateAccountButton{

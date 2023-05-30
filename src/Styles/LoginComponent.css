@@ -34,17 +34,17 @@
     color: white;
 }
 
-#CredentialsDiv{
+#CredentialsDivLogIn{
     position: relative;
     top: 50px;
 }
 
-#CredentialsDiv center div{
+#CredentialsDivLogIn center div{
     border-bottom: 1px solid black;
     width: 70%;
 }
 
-#CredentialsDiv center div input{
+#CredentialsDivLogIn center div input{
     background-color: transparent;
     border-width: 0px;
     margin-top: 20px;
@@ -52,11 +52,11 @@
     margin-left: 5px;
     color: white;
 }
-#CredentialsDiv center div input:focus{
+#CredentialsDivLogIn center div input:focus{
     outline: none;
 }
 
-#CredentialsDiv center div input::placeholder{
+#CredentialsDivLogIn center div input::placeholder{
     color: azure;
 }
 

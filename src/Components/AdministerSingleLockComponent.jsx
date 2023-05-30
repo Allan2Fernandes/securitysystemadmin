@@ -3,18 +3,21 @@ import "../Styles/AdministerSingleLockComponent.css"
 import {useNavigate} from "react-router-dom";
 
 function AdministerSingleLockComponent(props){
-    const [nameOfLock, setNameOfLock] = useState("One and lonely lock");
-    const [lockID, setLockID] = useState(50);
-    const [lockLocation, setLockLocation] = useState("Home");
+    const [nameOfLock, setNameOfLock] = useState("");
+    const [lockID, setLockID] = useState(0);
+    const [lockLocation, setLockLocation] = useState("");
     const [isShared, setIsShared] = useState(false)
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
     useEffect(()=>{
+        setNameOfLock(props.nameOfLock)
+        setLockID(props.lockID)
+        setLockLocation(props.lockLocation)
         setUserName(props.userName)
         setPassword(props.password)
-    }, [props.userName, props.password])
+    }, [props])
 
     function navigateToLockPermissionsPage(){
         navigate("/AdministerLockPermissions", {

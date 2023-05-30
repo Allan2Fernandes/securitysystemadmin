@@ -1,0 +1,10 @@
+
+#MainLockSelectorDiv{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    left: calc(50% - 150px - 300px - 50px);
+    top: calc((50% + 25px) - 200px);
+    background: linear-gradient(to top, #a3309e, #9147ac, #7d57b6, #6a64bb, #596fbc);
+    border-radius: 10px;
+}

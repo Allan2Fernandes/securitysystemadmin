@@ -65,7 +65,7 @@ function RegisterComponent(){
                 </div>
             </center>
 
-            <div id={"CredentialsDiv"}>
+            <div id={"CredentialsDivRegister"}>
                 <center id={"CenterForCredentialsDiv"}>
                     <div>
                         <FontAwesomeIcon icon={faUser} id={"faUser"}/>

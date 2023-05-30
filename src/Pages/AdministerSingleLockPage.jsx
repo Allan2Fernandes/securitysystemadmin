@@ -3,20 +3,47 @@ import UniversalTopBar from "../Components/UniversalTopBar";
 import AdministerSingleLockComponent from "../Components/AdministerSingleLockComponent";
 import "../Styles/AdministerSingleLockPage.css"
 import {useLocation} from "react-router-dom";
+import LockSelectorComponent from "../Components/LockSelectorComponent";
 
 function AdministerSingleLockPage(){
     const location = useLocation();
-    const [userName, setUserName] = useState("");
-    const [password, setPassword] = useState("");
+    const [listOfLocks, setListOfLocks] = useState([{
+        nameOfLock: "One and lonely lock",
+        lockID: 10,
+        lockLocation: "Window",
+        isShared: false
+    },
+        {
+            nameOfLock: "lock 2",
+            lockID: 10,
+            lockLocation: "Window",
+            isShared: false
+        },
+        {
+            nameOfLock: "lcok3",
+            lockID: 260,
+            lockLocation: "Window",
+            isShared: false
+        }
+    ]);
+    const [selectedLockIndex, setSelectedLockIndex] = useState(2)
 
-    useEffect(() =>{
-        setUserName(location.state?.userName)
-        setPassword(location.state?.password)
-    },[])
+
+
+    function setSelectedIndex(index){
+        setSelectedLockIndex(index)
+    }
+
     return (
         <div id={"MainDiv"}>
-            <UniversalTopBar userName={userName} password={password}/>
-            <AdministerSingleLockComponent userName={userName} password={password}/>
+            <UniversalTopBar/>
+            <AdministerSingleLockComponent
+                nameOfLock={listOfLocks[selectedLockIndex].nameOfLock}
+                lockID={listOfLocks[selectedLockIndex].lockID}
+                lockLocation={listOfLocks[selectedLockIndex].lockLocation}
+                isShared={listOfLocks[selectedLockIndex].isShared}
+            />
+            <LockSelectorComponent listOfLocks={listOfLocks} setSelectedIndex={setSelectedIndex}/>
         </div>
     )
 }
